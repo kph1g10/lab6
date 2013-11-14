@@ -80,11 +80,24 @@ require('classes/bid.class.php');
 		<!-- car bid form -->
 		<div class="row">
 			<h3>Place A Bid!</h3>
+				
+			<form action="process-bid.php" method="post">
+				<div class="form-group">
+					<label for="inputName">Name</label>
+					<input type="text" class="form-control" id="inputName" placeholder="Enter your name">
+				</div>
+				<div class="form-group">
+					<label for="inputBid">Bid</label>
+					<input type="number" class="form-control" id="inputBid" placeholder="Enter an amount">
+				</div>
+					
+				<input type="hidden" id="carId" value="<?=$_GET['id']?>">
+				
+				<button type="submit" class="btn btn-default">Submit</button>
+			</form>
+
 			
 			
-			<!-- =========================== -->
-			<!-- PART 1 BID FORM PLACEHOLDER -->
-			<!-- =========================== -->
 			
 			
 		</div><!-- /car bid form -->
