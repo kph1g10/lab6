@@ -65,7 +65,7 @@ require('classes/bid.class.php');
 							<tr>
 								<td><?=$bid->id?></td>
 								<td><?=$bid->name?></td>
-								<td>&pound;<?=currency_format($bid->value)?></td>
+								<td>&pound;<?=number_format($bid->value)?></td>
 								<td><?=$bid->datetime?></td>
 							</tr>
 						<?php endwhile; ?>
